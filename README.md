@@ -1,19 +1,8 @@
-# Handwriting Recognition
+# Machine Learning Practice
 
-A handwritten digit recognition model built with PyTorch and trained on the MNIST dataset. This project demonstrates convolutional neural networks (CNNs), backpropagation, stochastic gradient descent (SGD), and multiclass classification.
+A collection of small image-classification projects using different datasets and modeling approaches.
 
-## Run
+## Projects
 
-Install the required dependencies:
-
-```bash
-pip install torch torchvision matplotlib numpy
-```
-
-Launch the notebook:
-
-```bash
-jupyter notebook handwriting_recognition.ipynb
-```
-
-Run all cells to download the MNIST dataset, train the model, and evaluate its performance.
+- [Handwriting Recognition](handwriting-recognition/README.md) - A PyTorch convolutional neural network that recognizes handwritten digits from the MNIST dataset.
+- [Fashion MNIST Classification](fashion-recognition/README.md) - A NumPy softmax classifier that recognizes clothing categories and tracks experiments with Weights & Biases.

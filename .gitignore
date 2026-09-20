@@ -1,1 +1,23 @@
-data/
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Weights & Biases
+wandb/
+
+# Fashion MNIST data
+fashion-recognition/*.npy
+
+# Local editor settings
+.vscode/
