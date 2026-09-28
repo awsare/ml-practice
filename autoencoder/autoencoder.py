@@ -8,8 +8,8 @@ import matplotlib.pyplot as plt
 # ToTensor converts each 28x28 image to a float tensor of shape (1, 28, 28) with values in [0.0, 1.0]
 transform = transforms.ToTensor()
 
-train_dataset = datasets.FashionMNIST(root="data", train=True, download=True, transform=transform)
-test_dataset = datasets.FashionMNIST(root="data", train=False, download=True, transform=transform)
+train_dataset = datasets.FashionMNIST(root="autoencoder/data", train=True, download=True, transform=transform)
+test_dataset = datasets.FashionMNIST(root="autoencoder/data", train=False, download=True, transform=transform)
 
 # Each batch is (images, labels); the autoencoder only uses the images and ignores the labels
 train_loader = DataLoader(train_dataset, batch_size=128, shuffle=True)
@@ -79,5 +79,5 @@ for col in range(2):
 for ax in axes.flat:
     ax.axis("off")
 fig.tight_layout()
-fig.savefig("autoencoder_reconstructions.png", dpi=150)
+fig.savefig("autoencoder/autoencoder_reconstructions.png", dpi=150)
 plt.show()
