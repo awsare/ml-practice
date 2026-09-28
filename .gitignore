@@ -18,6 +18,8 @@ wandb/
 
 # Fashion MNIST data
 fashion-recognition/*.npy
+data/
+*.png
 
 # Local editor settings
 .vscode/
